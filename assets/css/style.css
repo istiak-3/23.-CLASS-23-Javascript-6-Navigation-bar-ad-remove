@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background: #EFF0F5;
+    padding: 40px;
+}
+
+.container {
+    width: 1270px;
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-- ========== COMMON CSS END ==================== --*/
+
+#nav_bar .container {
+    padding: 10px;
+    background: linear-gradient(#51ceffd0, #f3f3f3);
+}
+
+
+#nav_bar .main-bar_row {
+    justify-content: space-between;
+}
+
+#nav_bar .main-bar_row img {
+    width: 200px;
+    /* height: auto; */
+}
+
+#nav_bar .main-bar_row .main-bar_ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#nav_bar .main-bar_row .main-bar_ul a {
+    color: rgb(49, 49, 49);
+    font-family: "Lato", sans-serif;
+    font-weight: 550;
+    font-style: oblique;
+    display: inline-block;
+    position: relative;
+    padding: 20px 15px;
+}
+
+#nav_bar .main-bar_row .main-bar_ul a::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav_bar .main-bar_row .main-bar_ul a:hover::before {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav_bar .main-bar_row .mobile-menu_icon {
+    /* background:#a0a0a0 ; */
+    display: none;
+}
+
+
+#nav_bar .mobile-menu .mobile-bar_ul{
+    display: none;
+}
+
+
+    #nav_bar .mobile-menu .cross-icon{
+        display: none;
+    }
+
